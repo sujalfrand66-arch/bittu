@@ -1,0 +1,416 @@
+/* ==========================================================================
+   BITTU WHOLESALER — Truly Mobile-First Responsive Breakpoints
+   Tested & Optimized: 320px, 360px, 375px, 390px, 430px, Tablet & Desktop
+   Zero Horizontal Overflow • Touch Targets >= 44px • Safe Area Insets
+   ========================================================================== */
+
+/* ---------- Very Small Phones (320px – 359px) ---------- */
+@media (max-width: 359px) {
+  html, body {
+    font-size: 13px;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Single Column on 320px for maximum readability */
+  .product-density-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .wholesale-search-container {
+    display: none; /* Collapses into mobile search */
+  }
+
+  .brand-name-main {
+    font-size: 16px !important;
+  }
+
+  .brand-icon-box {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .category-tiles-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ---------- Standard Mobile (360px – 767px) ---------- */
+@media (max-width: 767px) {
+  /* Announcement Strip */
+  .announcement-inner {
+    flex-direction: column;
+    gap: 3px;
+    text-align: center;
+  }
+
+  .announcement-right {
+    display: none; /* Kept slim on mobile */
+  }
+
+  .announcement-left {
+    justify-content: center;
+    font-size: 10.5px;
+  }
+
+  /* Layer 2: Main Navigation Header on Mobile */
+  .main-nav-row {
+    padding: 8px 0;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .brand-mark-link {
+    order: 1;
+  }
+
+  .brand-icon-box {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand-icon-box svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .brand-name-main {
+    font-size: 17px;
+  }
+
+  .brand-name-sub {
+    font-size: 9px;
+  }
+
+  /* Mobile Actions */
+  .header-actions-group {
+    order: 2;
+    gap: 6px;
+    margin-left: auto;
+  }
+
+  .action-label-box {
+    display: none; /* Hide labels on mobile to save space */
+  }
+
+  .header-action-item {
+    padding: 6px;
+    min-height: var(--touch-target);
+    min-width: var(--touch-target);
+    justify-content: center;
+  }
+
+  .quote-cart-btn {
+    padding: 6px 10px !important;
+  }
+
+  .mobile-nav-toggle-btn {
+    display: flex !important;
+  }
+
+  /* Search Bar spans full width on row 2 of header */
+  .wholesale-search-container {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 4px;
+  }
+
+  .search-dept-select {
+    display: none; /* Simplified on mobile */
+  }
+
+  .wholesale-search-form {
+    border-width: 1.5px;
+  }
+
+  .search-input-field {
+    height: 38px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .search-action-btn {
+    height: 38px;
+    padding: 0 14px;
+  }
+
+  .search-action-btn span {
+    display: none;
+  }
+
+  /* Layer 3: Category Nav Bar */
+  .wholesale-category-layer {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .all-categories-trigger {
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+
+  .all-categories-trigger span {
+    display: none;
+  }
+
+  .wholesale-nav-link {
+    padding: 10px 10px;
+    font-size: 11.5px;
+  }
+
+  /* Compact Promotional Banner on Mobile (Flipkart-Style Immediate Shopping) */
+  .wholesale-promo-banner-section {
+    padding: 6px 0 10px;
+  }
+
+  .promo-banner-grid {
+    gap: 8px;
+  }
+
+  .main-promo-hero-card {
+    padding: 12px 14px;
+    border-radius: var(--radius-md);
+  }
+
+  .promo-pill-tag {
+    font-size: 9.5px;
+    padding: 2px 8px;
+    margin-bottom: 6px;
+  }
+
+  .promo-hero-title {
+    font-size: 15px;
+    line-height: 1.25;
+    margin-bottom: 4px;
+  }
+
+  .promo-hero-desc {
+    font-size: 11px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .side-deal-column {
+    display: none; /* Hide bulky side cards on mobile so products appear immediately */
+  }
+
+  .wholesale-trust-strip {
+    display: none; /* Relegated below products on mobile to save vertical viewport */
+  }
+
+  .promo-actions-row {
+    gap: 6px;
+    flex-direction: row;
+  }
+
+  .btn-promo-primary,
+  .btn-promo-whatsapp {
+    width: auto;
+    flex: 1;
+    padding: 7px 10px;
+    font-size: 11px;
+    min-height: 38px;
+    white-space: nowrap;
+    justify-content: center;
+  }
+
+  /* 2-Column Product Grid (Rule 3) */
+  .product-density-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .card-content {
+    padding: 8px 8px 10px;
+  }
+
+  .card-product-title {
+    font-size: 12px;
+    height: 32px;
+    margin-bottom: 4px;
+  }
+
+  .card-wholesale-unit-price {
+    font-size: 14px;
+  }
+
+  .card-mrp-price {
+    font-size: 10px;
+  }
+
+  .product-qty-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 4px 6px;
+  }
+
+  .qty-field-label {
+    font-size: 9px;
+  }
+
+  .card-qty-control {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .card-qty-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .card-qty-input {
+    flex: 1;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .card-subtotal-row {
+    font-size: 10px;
+  }
+
+  .subtotal-val {
+    font-size: 11.5px;
+  }
+
+  .btn-add-quote {
+    font-size: 10px;
+    padding: 7px 4px;
+    min-height: 36px;
+  }
+
+  /* Drawer Mobile Full Width */
+  .wholesale-quote-drawer {
+    max-width: 100%;
+  }
+
+  /* Modal on Mobile */
+  .quick-view-modal {
+    max-height: 94vh;
+  }
+
+  .quick-view-img-box {
+    padding: 16px;
+  }
+
+  .quick-view-img {
+    max-height: 180px;
+  }
+
+  .quick-view-body {
+    padding: 16px;
+  }
+
+  .qv-title {
+    font-size: 15px;
+  }
+
+  .qv-actions {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  /* Safe Area Inset Support */
+  body {
+    padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .mobile-bottom-nav {
+    padding-bottom: calc(6px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* ---------- 375px, 390px, 430px Specific Polishes ---------- */
+@media (min-width: 360px) and (max-width: 440px) {
+  .product-density-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .card-content {
+    padding: 8px;
+  }
+
+  .card-product-title {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+
+/* ---------- Tablets (768px – 991px) ---------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .wholesale-search-container {
+    max-width: 440px;
+  }
+
+  .search-dept-select {
+    max-width: 120px;
+  }
+
+  .product-density-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .category-tiles-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- Desktop (992px+) ---------- */
+@media (min-width: 992px) {
+  .mobile-nav-toggle-btn {
+    display: none !important;
+  }
+
+  .mobile-bottom-nav {
+    display: none !important;
+  }
+
+  .mobile-category-shortcuts-bar {
+    display: block;
+  }
+}
+
+/* ---------- Wide Desktop (1200px+) ---------- */
+@media (min-width: 1200px) {
+  .product-density-grid {
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 14px !important;
+  }
+}
+
+/* ---------- Large Desktop (1440px+) ---------- */
+@media (min-width: 1440px) {
+  .product-density-grid {
+    grid-template-columns: repeat(6, 1fr) !important;
+    gap: 14px !important;
+  }
+  .container {
+    width: 96% !important;
+    max-width: 1720px !important;
+  }
+}
+
+/* ---------- Ultra-Wide Desktop (1680px - 1920px+) ---------- */
+@media (min-width: 1680px) {
+  .product-density-grid {
+    grid-template-columns: repeat(7, 1fr) !important;
+    gap: 16px !important;
+  }
+  .container {
+    width: 96% !important;
+    max-width: 1860px !important;
+  }
+}
+
