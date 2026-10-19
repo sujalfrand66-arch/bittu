@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /.system_generated/
+
+Sitemap: https://www.bittutelecom.in/sitemap.xml
